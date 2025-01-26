@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 body, section, main{
-    background-color: black; /* define que a cor de fundo seja preta, importante por conta da imagem do background ter transparencia */
+    background-color: black; 
     color: white;
     display: flex;
-    flex-direction: column; /* centraliza verticalmente */
-    align-items: center; /* centraliza horizontalmente */
+    flex-direction: column; 
+    align-items: center; 
 }
 
 .banner {
     width: 1440px;
     height: 605px;
-    border-bottom: 1px solid #33a8db; /* cria a divisão de espaço entre um quadro e o proximo */
+    border-bottom: 1px solid #33a8db; 
     background-image: url(../images/banner.png);
     background-size: cover;
     display: flex;
@@ -32,12 +32,11 @@ body, section, main{
     height: 268px;
     background-color: rgba(0,0,0, 0.2);
     border-radius: 100%;
-    display: flex; /* foi colocado o display flex para que a imagem interna possa ser centralizada */
+    display: flex; 
     margin: 8px;
 }
 
 .logo img {  
-    /* definição do posicionamento da logo */
     align-self: center;
     margin: auto;
 }
@@ -47,17 +46,15 @@ h1{
     font-weight: 900;
     font-size: 40px;
     text-transform: uppercase;
-    /* tudo pra baixo é definição do degrade */
-    background-image: linear-gradient(to bottom, #33A8DB, #1472B7); /* cria um background com degrade, porém externamente */
-    background-clip: text; /* apaga todo o background que não estiver atrás do texto */
-    -webkit-background-clip: text; /* necessario que alguns navegadores não vem nativo */
-    -webkit-text-fill-color: transparent; /* faz com que a fonte seja transparente e seja visivel apenas o background */
-    color: white; /* não tem nada a ver com o degrade, é apenas uma cor de contraste caso o degrade não funcione e seja possivel a leitura */
+    background-image: linear-gradient(to bottom, #33A8DB, #1472B7); 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    color: white; 
     margin: 8px;
 }
 
 .banner-content p{
-    /* nadad de especial por aqui, apenas definindo o tamanho das linhas e o tamanho da fonte e a fonte em si */
     width: 510px;
     height: 46;
     font-family: "Raleway";
@@ -74,23 +71,23 @@ button{
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
-    color: #33A8DB; /* cor do texto */
-    background-color: transparent; /* torna o fundo do botao transparente */
-    border: 2px solid transparent; /* torna as bordas transparente e com uma grossura de 2px */
-    border-image-source: linear-gradient(180deg, #33A8DB 0%, #1572B7 100%) ; /* definição do gradiente em si */
-    border-image-slice: 1; /* faz o gradiente preencher toda a borda */
+    color: #33A8DB; 
+    background-color: transparent; 
+    border: 2px solid transparent; 
+    border-image-source: linear-gradient(180deg, #33A8DB 0%, #1572B7 100%) ; 
+    border-image-slice: 1; 
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
 button:hover {
-    background-color: #3BA1CD;/* Altera a cor de fundo ao passar o mouse */ 
-    color: white; /* Cor do texto ao passar o mouse */
+    background-color: #3BA1CD;
+    color: white; 
     cursor: pointer;
 }
 
 #course-content{
-    height: 533px; /* configura o tamanho do espaço */
+    height: 533px; 
     width: 1440px;
     border-bottom: 1px solid #33a8db;
 }
@@ -121,7 +118,7 @@ h2{
 }
 .module{
     width: 450px;
-    padding: 16px 27px 14px 60px; /* define o padding interno do box-shadow de certa forma */
+    padding: 16px 27px 14px 60px; 
     border: 1px solid #33A8DB ;
     border-radius: 30px;
     box-shadow: inset 15px 15px 15px 30px #252525;
